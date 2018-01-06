@@ -1,0 +1,115 @@
+body, html {
+  font-family: 'Heebo', sans-serif;
+  color:#595959;
+  height: 100%;
+  margin: 0;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about{
+  max-width: 800px;
+  min-height: 100%;
+}
+
+.about-body {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 175%;
+}
+
+.fa {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+img.hoverImages {
+  margin-top: 15px;
+  margin-bottom: 8px;
+	-webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+}
+
+img.hoverImages:hover {
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+a.linked:link {
+    color: #66a3ff;
+    text-decoration: none;
+}
+
+
+a.linked:hover {
+    color: #003d99;
+    text-decoration: none;
+    border-bottom: 2px solid;
+}
