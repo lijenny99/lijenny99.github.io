@@ -107,9 +107,29 @@ a.linked:link {
     text-decoration: none;
 }
 
+a.linked:visited {
+    color: #66a3ff;
+    text-decoration: none;
+}
+
 
 a.linked:hover {
     color: #003d99;
     text-decoration: none;
     border-bottom: 2px solid;
+}
+
+a.project-link:link {
+  color: #595959;
+  text-decoration: none;
+}
+
+a.project-link:visited {
+  color: #595959;
+  text-decoration: none;
+}
+
+a.project-link:hover {
+  color: #595959;
+  text-decoration: none;
 }
