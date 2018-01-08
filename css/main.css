@@ -168,3 +168,8 @@ a.project-link:hover {
   font-size: 16px;
   line-height: 175%;
 }
+
+.fa-angle-left {
+  padding-left: 30px;
+  padding-top: 30px;
+}
