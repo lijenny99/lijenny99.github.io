@@ -9,26 +9,23 @@ body, html {
 
 
 h1 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 500;
-
+    animation: type 4s steps(60, end); 
 }
 
 .container {
   display: block;
   margin: 0 auto;
   padding-top: 120px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .about{
-  max-width: 800px;
   min-height: 100%;
 }
 
 .about-body {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 300;
   line-height: 175%;
 }
@@ -62,33 +59,6 @@ p {
 }
 
 
-/* Add padding BETWEEN each column */
-.row,
-.row > .column, .row > .column-2, .row > .column-3  {
-    padding: 8px;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-}
-
-.column-2 {
-    float: left;
-    width: 100%;
-}
-
-.column-3 {
-  float: left;
-  width: 33.333%;
-}
-/* Clear floats after rows */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 
 
