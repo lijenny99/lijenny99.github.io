@@ -11,13 +11,14 @@ body, html {
 h1 {
   font-size: 50px;
   font-weight: 500;
-    animation: type 4s steps(60, end); 
+    animation: type 4s steps(60, end);
 }
 
 .container {
   display: block;
   margin: 0 auto;
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .about{
@@ -28,6 +29,14 @@ h1 {
   font-size: 24px;
   font-weight: 300;
   line-height: 175%;
+}
+
+.card-img-top {
+  background-color: #003366;
+}
+
+.card-img-top img {
+  opacity: 0.5;
 }
 
 .fa {
