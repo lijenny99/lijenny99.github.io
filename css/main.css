@@ -14,6 +14,18 @@ h1 {
     animation: type 4s steps(60, end);
 }
 
+h2 {
+  font-size: 20px;
+  color: #808080;
+  font-weight: 300;
+}
+
+.navigation {
+  text-align: right;
+  margin-right: 170px;
+  margin-top: 50px;
+}
+
 .container {
   display: block;
   padding-top: 120px;
@@ -28,10 +40,6 @@ h1 {
   font-size: 24px;
   font-weight: 300;
   line-height: 175%;
-}
-
-.card {
-  border-radius: 20px;
 }
 
 .card-img-overlay {
