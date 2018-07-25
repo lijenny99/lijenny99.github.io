@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script
     src="https://code.jquery.com/jquery-3.2.1.js"
@@ -26,7 +27,7 @@
     <title>Jennifer Li</title>
   </head>
   <body>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 
@@ -36,14 +37,25 @@ document.addEventListener('DOMContentLoaded', function() {
   var txt = '👋 Hi, my name is Jenny Li';
   var speed = 100;
 
+
   function typeWriter() {
     if (i < txt.length) {
       document.getElementById("type").innerHTML += txt.charAt(i);
       i++;
       setTimeout(typeWriter, speed);
     }
+
+    if (i === txt.length) {
+      $(".about").fadeIn("slow");
   }
+
+
+  }
+
+
   window.onload = typeWriter;
+  $(".about").fadeIn("slow");
+
 })
 
 
@@ -66,9 +78,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
       <div class="card-deck">
 
-<div class="card text-white border-light" style="width: 25rem;border-radius: 20px">
-  <img class="card-img" src="img/hacktps.png" style="border-radius: 20px">
-  <div class="card-img-overlay" style="border-radius: 20px; background: linear-gradient(to bottom right,rgba(46, 49, 146, 0.8),rgba(27, 255, 255, 0.8));">
+<div class="card text-white border-light" style="width: 25rem;border-radius: 15px">
+  <img class="card-img" src="img/hacktps.png" style="border-radius: 15px">
+  <div class="card-img-overlay" style="border-radius: 15px; background: linear-gradient(to bottom right,rgba(46, 49, 146, 0.8),rgba(27, 255, 255, 0.8));">
     <h5 class="card-title">Hack TPS</h5>
     <p class="card-text">A collaboration between the Toronto Police Services and the DMZ to empower
       the community and build solutions for safety issues.</p>
@@ -76,9 +88,9 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 
-<div class="card text-white border-light" style="width: 25rem;border-radius: 20px">
-  <img class="card-img" src="img/founders-10.png" style="border-radius: 20px">
-  <div class="card-img-overlay" style="border-radius: 20px; background: linear-gradient(to bottom right,rgba(29, 151, 108, 0.8),rgba(147, 249, 185, 0.8));">
+<div class="card text-white border-light" style="width: 25rem;border-radius: 15px">
+  <img class="card-img" src="img/founders-10.png" style="border-radius: 15px">
+  <div class="card-img-overlay" style="border-radius: 15px; background: linear-gradient(to bottom right,rgba(29, 151, 108, 0.8),rgba(147, 249, 185, 0.8));">
     <h5 class="card-title">Founders Network</h5>
     <p class="card-text">Responsible for club brand image, marketing assets such as
       Facebook event banners and information packages, and website UI/UX.</p>
@@ -86,9 +98,9 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 
-<div class="card text-white border-light" style="width: 25rem;border-radius: 20px">
-  <img class="card-img" src="img/shoelace.png" style="border-radius: 20px">
-  <div class="card-img-overlay" style="border-radius: 20px;background: linear-gradient(to bottom right,rgba(212, 20, 90, 0.8),rgba(251, 176, 59, 0.8));">
+<div class="card text-white border-light" style="width: 25rem;border-radius: 15px">
+  <img class="card-img" src="img/shoelace.png" style="border-radius: 15px">
+  <div class="card-img-overlay" style="border-radius: 15px;background: linear-gradient(to bottom right,rgba(212, 20, 90, 0.8),rgba(251, 176, 59, 0.8));">
     <h5 class="card-title">Shoelace</h5>
     <p class="card-text">Retargeting automation for ecommerce stores. Helping clients optimize
     their ads and assisting with Q4 product rebranding.</p>
