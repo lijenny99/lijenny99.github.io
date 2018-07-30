@@ -1,6 +1,6 @@
 body, html {
   font-family: 'IBM Plex Sans', sans-serif;
-  color:#000000;
+  color:#313639;
   height: 100%;
   margin: 0;
   -ms-text-size-adjust: 100%;
@@ -15,5 +15,33 @@ h1 {
 
 h2 {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
+  color: #474747;
+}
+
+p {
+  color: #474747;
+  font-weight:300;
+  font-size: 14px;
+}
+
+.container {
+  margin-top: 200px;
+}
+
+
+.intro-text {
+  margin-left: 80px;
+  max-width: 600px;
+  min-height: 100%;
+}
+
+.buttons {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.fab {
+  margin-right: 40px;
+  color: #313639;
 }
