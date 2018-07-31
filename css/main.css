@@ -34,14 +34,37 @@ p {
   margin-left: 80px;
   max-width: 600px;
   min-height: 100%;
+  float: left;
 }
 
-.buttons {
-  margin-top: 30px;
-  margin-bottom: 50px;
-}
-
-.fab {
+.fab, .fas {
   margin-right: 40px;
   color: #313639;
+}
+
+.icons {
+  margin-top: 50px;
+}
+
+
+#diamond {
+	width: 0;
+	height: 0;
+  float: left;
+  margin-left: 15px;
+  margin-top: 10px;
+  border: 12px solid transparent;
+	border-bottom-color: #a5b6ed;
+	position: relative;
+	top: -12px;
+}
+#diamond:after {
+	content: '';
+	position: absolute;
+	left: -12px;
+	top: 12px;
+	width: 0;
+	height: 0;
+	border: 12px solid transparent;
+	border-top-color: #a5b6ed;
 }
