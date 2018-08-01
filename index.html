@@ -24,14 +24,14 @@
     <title>Jennifer Li</title>
   </head>
   <body>
-      <nav class="navbar navbar-expand-lg navbar-light ">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
             <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Work</a>
+            <a class="nav-item nav-link" href="#projects">Work</a>
             <a class="nav-item nav-link" href="#">Contact</a>
             <a class="btn btn-outline-primary" href="#" role="button">Download Resume</a>
           </div>
@@ -39,31 +39,52 @@
       </nav>
 
     <div class=container>
-      <!-- <div id="diamond"></div> -->
-      <div class="intro-text">
-        <h1>👋 Hi, I'm Jenny Li</h1>
-        <h2>Software Engineering & Business Student @ <span style="color:#5f27cd">Western University</span></h2>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum faucibus eros, quis molestie risus venenatis ut.
-          Fusce quis nisi sed nibh tempor bibendum sit amet ultrices arcu. Sed viverra sem nec sapien ornare, quis mattis libero semper.
-          Mauris ultrices elit neque, sit amet rutrum erat pretium quis. Mauris facilisis venenatis lectus nec venenatis.
-          <br>
-          <br>
-          Duis fermentum ut elit sit amet tincidunt. Ut quam elit, iaculis id suscipit ut, ullamcorper nec nulla.
-          Donec ut aliquet leo, eu bibendum quam. Etiam dolor lacus, fermentum quis finibus a, iaculis ut justo.
-          Duis vel ex ex. In hac habitasse platea dictumst. Quisque et varius tortor.
-        </p>
-        <div class="icons">
-            <a target="_blank" href="mailto:lijenny1999@gmail.com"><i class="hvr-bob fas fa-lg fa-fw fa-envelope"></i></a>
-            <a target="_blank" href="http://dribbble.com/jnnyli"><i class="hvr-bob fab fa-lg fa-fw fa-dribbble"></i></a>
-            <a target="_blank" href="http://linkedin.com/in/lijennifer2"><i class="hvr-bob fab fa-lg fa-fw fa-linkedin-in"></i></a>
-            <a target="_blank" href="http://github.com/lijenny99"><i class="hvr-bob fab fa-lg fa-fw fa-github"></i></a>
-            <a target="_blank" href="http://medium.com/"><i class="hvr-bob fab fa-lg fa-fw fa-medium-m"></i></a>
-        </div>
+      <div id="intro">
+        <div class="row">
+          <div class="col-1">
+            <div id="diamond"></div>
+            <div class="rectangle1"></div>
+          </div>
+          <div class="col-7">
+            <div class="intro-text">
+              <h1><span class="hand" style="display:inline-block">👋 </span>     Hi, I'm Jenny Li</h1>
+              <h2>Software Engineering & Business Student @ <span style="color:#5f27cd">Western University</span></h2>
+              <br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum faucibus eros, quis molestie risus venenatis ut.
+                Fusce quis nisi sed nibh tempor bibendum sit amet ultrices arcu. Sed viverra sem nec sapien ornare, quis mattis libero semper.
+                Mauris ultrices elit neque, sit amet rutrum erat pretium quis. Mauris facilisis venenatis lectus nec venenatis.
+                <br>
+                <br>
+                Duis fermentum ut elit sit amet tincidunt. Ut quam elit, iaculis id suscipit ut, ullamcorper nec nulla.
+                Donec ut aliquet leo, eu bibendum quam. Etiam dolor lacus, fermentum quis finibus a, iaculis ut justo.
+                Duis vel ex ex. In hac habitasse platea dictumst. Quisque et varius tortor.
+              </p>
+              <div class="icons">
+                  <a target="_blank" href="mailto:lijenny1999@gmail.com"><i class="hvr-bob fas fa-lg fa-fw fa-envelope"></i></a>
+                  <a target="_blank" href="http://dribbble.com/jnnyli"><i class="hvr-bob fab fa-lg fa-fw fa-dribbble"></i></a>
+                  <a target="_blank" href="http://linkedin.com/in/lijennifer2"><i class="hvr-bob fab fa-lg fa-fw fa-linkedin-in"></i></a>
+                  <a target="_blank" href="http://github.com/lijenny99"><i class="hvr-bob fab fa-lg fa-fw fa-github"></i></a>
+                  <a target="_blank" href="http://medium.com/"><i class="hvr-bob fab fa-lg fa-fw fa-medium-m"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+              <img class="me" alt="" src="me.png"/>
+            </div>
       </div>
-      <img class="me" alt="" src="me.png" style="height: 300px;margin-left: 30px"/>
     </div>
 
+    <div id="projects">
+      <div class="row">
+        <div class="col-1">
+          <div class="rectangle2"></div>
+        </div>
+        <div class="col">
+          <p>This is some text</p>
+        </div>
+    </div>
+    </div>
+  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

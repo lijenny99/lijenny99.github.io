@@ -29,9 +29,7 @@ p {
   margin-top: 200px;
 }
 
-
 .intro-text {
-  margin-left: 80px;
   max-width: 600px;
   min-height: 100%;
   float: left;
@@ -51,7 +49,6 @@ p {
 	width: 0;
 	height: 0;
   float: left;
-  margin-left: 15px;
   margin-top: 10px;
   border: 12px solid transparent;
 	border-bottom-color: #a5b6ed;
@@ -67,4 +64,49 @@ p {
 	height: 0;
 	border: 12px solid transparent;
 	border-top-color: #a5b6ed;
+}
+
+.rectangle1 {
+  height: 450px;
+  width: 2px;
+  margin-left: 11px;
+  margin-top: 15px;
+  background-color: #a5b6ed;
+}
+
+.rectangle2 {
+  height: 1000px;
+  width: 2px;
+  margin-left: 11px;
+  background-color: #a5b6ed;
+}
+
+.me {
+  height: auto;
+  width: 100%;
+}
+
+.hand:hover {
+  cursor: default;
+  animation: wiggle 0.3s linear;
+  transform-origin: right bottom;
+  animation-iteration-count: 1;
+}
+
+@keyframes wiggle{
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25%{
+    transform: rotateZ(-15deg);
+  }
+  50%{
+    transform: rotateZ(0deg);
+  }
+  75%{
+    transform: rotateZ(8deg);
+  }
+  100%{
+    transform: rotateZ(0);
+  }
 }
