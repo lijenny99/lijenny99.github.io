@@ -29,6 +29,16 @@ p {
   margin-top: 200px;
 }
 
+.navbar {
+  margin-top: 30px;
+  margin-right: 120px;
+}
+
+.nav-item {
+  margin-right: 35px;
+  color: #474747;
+}
+
 .intro-text {
   max-width: 600px;
   min-height: 100%;
@@ -67,7 +77,7 @@ p {
 }
 
 .rectangle1 {
-  height: 450px;
+  height: 420px;
   width: 2px;
   margin-left: 11px;
   margin-top: 15px;
@@ -109,4 +119,13 @@ p {
   100%{
     transform: rotateZ(0);
   }
+}
+
+.projects-text {
+  margin-top: 30px;
+}
+
+.card {
+    max-width: 800px;
+    margin-top: 30px;
 }
