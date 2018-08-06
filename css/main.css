@@ -96,6 +96,7 @@ p {
   width: 100%;
 }
 
+
 .hand:hover {
   cursor: default;
   animation: wiggle 0.3s linear;
@@ -121,11 +122,32 @@ p {
   }
 }
 
+
 .projects-text {
   margin-top: 30px;
 }
 
 .card {
-    max-width: 800px;
     margin-top: 30px;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #8A61DC;
+}
+
+.card-img-overlay:hover {
+  opacity: 0.8;
+}
+
+.displaced {
+  margin-top: 100px;
 }
