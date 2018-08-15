@@ -149,7 +149,7 @@ p {
 }
 
 .card-img-overlay:hover {
-  opacity: 0.9;
+    opacity: 0.9;
     box-shadow: 0 10px 70px 2px rgba(0,0,0,0.2);
 }
 
@@ -157,6 +157,7 @@ p {
   border:none;
   transition: 0.4s;
   margin-top: 30px;
+  position: relative;
 }
 
 .card:hover {
@@ -168,5 +169,8 @@ p {
 }
 
 .card-paragraph {
-  margin: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
