@@ -1,7 +1,6 @@
 body, html {
   font-family: 'IBM Plex Sans', sans-serif;
   color:#313639;
-  height: 100%;
   margin: 0;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -31,7 +30,8 @@ p {
 }
 
 .container {
-  margin-top: 200px;
+  margin-top: 30vh;
+  position: relative;
 }
 
 .navbar {
@@ -45,7 +45,7 @@ p {
 }
 
 .intro-text {
-  max-width: 600px;
+  max-width: 750px;
   min-height: 100%;
   float: left;
 }
@@ -103,6 +103,7 @@ a.club-links:active {
 
 .icons {
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 
@@ -128,17 +129,10 @@ a.club-links:active {
 }
 
 .rectangle1 {
-  height: 420px;
+  height: 100%;
   width: 2px;
   margin-left: 11px;
   margin-top: 15px;
-  background-color: #0d3aa6;
-}
-
-.rectangle2 {
-  height: 1000px;
-  width: 2px;
-  margin-left: 11px;
   background-color: #0d3aa6;
 }
 
@@ -174,8 +168,8 @@ a.club-links:active {
 
 
 .projects-text {
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .card-img {
