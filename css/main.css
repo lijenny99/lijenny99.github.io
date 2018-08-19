@@ -28,7 +28,7 @@ h5 {
   font-weight: 500;
 }
 
-p, ul, li {
+p, ul, li, ol {
   color: #474747;
   font-weight:300;
   font-size: 14px;
