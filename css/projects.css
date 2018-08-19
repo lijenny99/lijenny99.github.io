@@ -1,0 +1,20 @@
+.jumbotron-wfn {
+  background: url(../img/thumbnails/thumbnail-founders.png);
+  background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 330px;
+}
+
+.container {
+  display: block;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.subtitle {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+}
