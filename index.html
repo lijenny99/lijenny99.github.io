@@ -9,116 +9,207 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-113649003-1');
+
 </script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script
-    src="https://code.jquery.com/jquery-3.2.1.js"
-    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-    crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="image/png" href="img/favicon-small.png"/>
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <title>Jennifer Li</title>
   </head>
   <body>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-<div class="container">
-    <h1>Jennifer Li</h1>
-    <div class="about">
-      <span class="about-body">Hey, I'm Jenny, a software engineering and business student
-        at the University of Western Ontario.
-      <br>
-      <br>
-      I currently handle design and tech for <a class="linked" href="https://www.facebook.com/westernfoundersnetwork/" target="_blank">
-      Western Founders Network</a> and <a class="linked" href="https://www.facebook.com/WVAwestern/" target="_blank">
-      Western Venture Association.</a>
-      My past experiences include managing marketing and graphics for <a class="linked" href="http://creativitythrougharts.org" target="_blank">
-      Creativity Through Arts</a>,
-      <a class="linked" href="https://www.facebook.com/MarkhamYouthCouncil/" target="_blank">Markham Youth Council</a>, and
-      <a class="linked" href="https://www.facebook.com/mssdeca/" target="_blank">Markville DECA.</a>
-      I have also helped <a class="linked" href="https://www.rbcroyalbank.com/personal.html" target="_blank">
-        RBC</a> enhance their social intranet experience.
-      <br>
-      <br>
-      I'm an avid tea drinker, nap taker, and stationery collector. Check out my work below!
-      <br>
-      <br>
-      <span class="icons">
-      <a href="mailto:lijenny1999@gmail.com"><i class="fa fa-lg fa-fw fa-envelope"></i></a>
-      <a target="_blank" href="Resume.pdf"><i class="fa fa-lg fa-fw fa-file-text"></i></a>
-      <a target="_blank" href="http://linkedin.com/in/lijennifer2"><i class="fa fa-lg fa-fw fa-linkedin"></i></a>
-      <a target="_blank" href="http://github.com/lijenny99"><i class="fa fa-lg fa-fw fa-github"></i></a>
-    </span>
+      <nav class="navbar navbar-expand navbar-light ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active animated fadeIn" href="#">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link animated fadeIn" href="#projects">Work</a>
+            <div class="hvr-grow">
+              <a class="btn btn-outline-primary animated pulse" href="Resume.pdf" target="_blank" role="button">Download Resume</a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-      </span>
-
-    </div>
-  <div id="projects">
-    <div class="row">
-
-      <div class="column">
-        <div class="content">
-    			<a class="project-link" href="projects/hack-tps.html">
-          <img class="hoverImages" src="img/thumbnail-tps.png" style="width:100%">
-          <h3>Blue Hat</h3>
-          <p>A React Native mobile messaging platform.</p>
-    		</a>
+    <div class="container">
+      <div class="direc" style="position: absolute; height: 100%">
+        <div id="diamond"></div>
+        <div class="rectangle1"></div>
+      </div>
+      <div class="body" style="margin-left: 60px">
+        <div id="intro">
+          <div class="row">
+            <div class="col-lg-8 col-md-11 col-sm-11 col-11">
+              <div class="intro-text">
+                <h1 class="animated fadeInDown"><span class="hand" style="display:inline-block">👋 </span>     Hi, I'm Jenny Li</h1>
+                <h2 class="animated fadeInDown">Software Engineering & Business Student @ <span style="color:#5f27cd">Western University</span></h2>
+                <br>
+                <p class="animated fadeIn">I have always been fascinated by the beautiful interfaces and well crafted user experiences
+                  in the products I use in my everyday life. This led to my profound interest in UI/UX and product design, front-end development,
+                  and product management. I hope to be able to build my own products for others to use and love someday. ✨
+                  <br>
+                  <br>
+                  I currently serve as VP Design on
+                  <a class="club-links" href="https://foundersnetwork.ca" target="_blank">Western Founders Network</a> and VP Tech & Communications on
+                  <a class="club-links" href="https://westernventureassociation.ca" target="_blank">Western Venture Association</a>
+                  where my love for marketing and design is used to promote internal events to students.
+                  I'm always open to new opportunities and projects; please get in touch if you would like to work or create something together! 😊
+                </p>
+                <div class="icons animated fadeInUp">
+                    <a target="_blank" href="mailto:lijenny1999@gmail.com"><i class="hvr-bob fas fa-lg fa-fw fa-envelope"></i></a>
+                    <a target="_blank" href="http://dribbble.com/jnnyli"><i class="hvr-bob fab fa-lg fa-fw fa-dribbble"></i></a>
+                    <a target="_blank" href="http://linkedin.com/in/lijennifer2"><i class="hvr-bob fab fa-lg fa-fw fa-linkedin-in"></i></a>
+                    <a target="_blank" href="http://github.com/lijenny99"><i class="hvr-bob fab fa-lg fa-fw fa-github"></i></a>
+                    <!-- <a target="_blank" href="http://medium.com/"><i class="hvr-bob fab fa-lg fa-fw fa-medium-m"></i></a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block">
+              <div class="hvr-shrink">
+                <img class="me animated pulse" alt="" src="me.png"/>
+              </div>
+              </div>
         </div>
       </div>
 
-      <div class="column">
-        <div class="content">
-          <a class="project-link" href="projects/hack-the-valley.html">
-          <img class="hoverImages" src="img/thumbnail-lwm.png" style="width:100%">
-          <h3>learnwith.me</h3>
-          <p>A platform for like-minded learners and teachers to connect.</p>
-        </a>
+      <div id="projects">
+          <div class="row">
+            <div class="col">
+              <div class="projects-text">
+                <h4 class="animated fadeIn">Check out what I've been working on 👇</h4>
+              </div>
+          <div class="row">
+            <div class="col-md">
+              <div data-aos="fade-right" data-aos-duration="1000">
+                <a href="projects/founders.html">
+                  <div class="card mt-3 mt-md-0">
+                    <img class="card-img" src="img/thumbnails/thumbnail-founders.png" alt="Card image">
+                    <div class="card-img-overlay">
+                      <div class="card-paragraph">
+                      <h3 class="card-title text-white text-center">Founders Network</h3>
+                      <p class="card-text text-white text-center">
+                        Responsible for club's brand image, creative assets, and cultivating
+                        a design community.
+                      </p>
+                    </div>
+                    </div>
+                  </div>
+                </a>
+            </div>
+            </div>
+            <div class="col-md">
+              <div data-aos="fade-left" data-aos-duration="1000">
+                <a href="projects/p5k.html">
+                  <div class="card mt-3 mt-md-5">
+                    <img class="card-img" src="img/thumbnails/thumbnail-p5k.png" alt="Card image">
+                    <div class="card-img-overlay">
+                    <div class="card-paragraph">
+                      <h3 class="card-title text-white text-center">Project 5K</h3>
+                      <p class="card-text text-white text-center">
+                        Connecting volunteer events
+                        with high school students.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md">
+            <div data-aos="fade-right" data-aos-duration="1000">
+              <a href="projects/tps.html">
+                  <div class="card mt-3 mt-md-0">
+                    <img class="card-img" src="img/thumbnails/thumbnail-tps.png" alt="Card image">
+                    <div class="card-img-overlay">
+                      <div class="card-paragraph">
+                      <h3 class="card-title text-white text-center">BlueHat</h3>
+                      <p class="card-text text-white text-center">
+                        Mobile messaging platform designed to limit unnecessary
+                        911 calls.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              </div>
+            </div>
+            <div class="col-md">
+              <div data-aos="fade-left" data-aos-duration="1000">
+                <a href="projects/hackthevalley.html">
+                  <div class="card mt-3 mt-md-5">
+                    <img class="card-img" src="img/thumbnails/thumbnail-htv.png" alt="Card image">
+                    <div class="card-img-overlay">
+                      <div class="card-paragraph">
+                      <h3 class="card-title text-white text-center">learnwith.me</h3>
+                      <p class="card-text text-white text-center">
+                      A platform where learners and teachers can connect.
+                      </p>
+                    </div>
+                  </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+    <p style="margin-top: 20px;padding-bottom: 40px">
+      © Made with ❤️by Jennifer Li, 2018
+    </p>  </div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
-  <div class="column">
-    <div class="content">
-			<a class="project-link" href="projects/founders.html">
-      <img class="hoverImages" src="img/thumbnail-founders.png" style="width:100%">
-      <h3>Western Founders Network</h3>
-      <p>Vice President of Design - UI/UX and branding.</p>
-		</a>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-			<a class="project-link" href="projects/snapchat.html">
-    <img class="hoverImages" src="img/thumbnail-snapchat.png" style="width:100%">
-      <h3>Snapchat Website Redesign</h3>
-      <p>Personal project to familiarize myself with web design.</p></a>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-			<a class="project-link" href="projects/highschool.html">
-    <img class="hoverImages" src="img/thumbnail-highschool.png" style="width:100%">
-      <h3>High School</h3>
-      <p>Graphics and marketing for extracurriculars in high school.</p></a>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-			<a class="project-link" href="projects/illustration.html">
-    <img class="hoverImages" src="img/thumbnail-illustration.png" style="width:100%">
-      <h3>Illustration</h3>
-      <p>Various graphic design and illustration projects.</p></a>
-    </div>
-  </div>
-</div>
-  </div>
-  <span class="footer">Copyright © 2018 Jennifer Li</span>
-</div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
   </body>
 </html>
