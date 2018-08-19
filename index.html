@@ -11,7 +11,7 @@
   gtag('config', 'UA-113649003-1');
 
 </script>
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
 <script>
 $(document).ready(function(){
@@ -49,6 +49,7 @@ $(document).ready(function(){
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Jennifer Li</title>
@@ -62,8 +63,9 @@ $(document).ready(function(){
           <div class="navbar-nav ml-auto">
             <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="#projects">Work</a>
-            <a class="nav-item nav-link" href="#">Contact</a>
-            <a class="btn btn-outline-primary" href="Resume.pdf" target="_blank" role="button">Download Resume</a>
+            <div class="hvr-grow">
+              <a class="btn btn-outline-primary animated pulse" href="Resume.pdf" target="_blank" role="button">Download Resume</a>
+            </div>
           </div>
         </div>
       </nav>
@@ -77,19 +79,20 @@ $(document).ready(function(){
           </div>
           <div class="col-lg-7 col-md-11 col-sm-11 col-11">
             <div class="intro-text">
-              <h1><span class="hand" style="display:inline-block">👋 </span>     Hi, I'm Jenny Li</h1>
-              <h2>Software Engineering & Business Student @ <span style="color:#5f27cd">Western University</span></h2>
+              <h1 class="animated fadeInDown"><span class="hand" style="display:inline-block">👋 </span>     Hi, I'm Jenny Li</h1>
+              <h2 class="animated fadeInDown">Software Engineering & Business Student @ <span style="color:#5f27cd">Western University</span></h2>
               <br>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum faucibus eros, quis molestie risus venenatis ut.
-                Fusce quis nisi sed nibh tempor bibendum sit amet ultrices arcu. Sed viverra sem nec sapien ornare, quis mattis libero semper.
-                Mauris ultrices elit neque, sit amet rutrum erat pretium quis. Mauris facilisis venenatis lectus nec venenatis.
+              <p class="animated fadeIn">I have always been fascinated by the beautiful interfaces and well crafted user experiences
+                in the products I use in my everyday life. This led to my profound interest in UI/UX and product design, front-end development,
+                and product management. I hope to be able to build my own products for others to use and love someday. ✨
                 <br>
                 <br>
-                Duis fermentum ut elit sit amet tincidunt. Ut quam elit, iaculis id suscipit ut, ullamcorper nec nulla.
-                Donec ut aliquet leo, eu bibendum quam. Etiam dolor lacus, fermentum quis finibus a, iaculis ut justo.
-                Duis vel ex ex. In hac habitasse platea dictumst. Quisque et varius tortor.
+                I currently serve as VP Design on
+                <a class="club-links" href="https://foundersnetwork.ca" target="_blank">Western Founders Network</a> and VP Tech & Communications on
+                <a class="club-links" href="https://westernventureassociation.ca" target="_blank">Western Venture Association</a>.
+                I'm always open to new opportunities and projects; please get in touch if you would like to work or create something together! 😊
               </p>
-              <div class="icons">
+              <div class="icons animated bounceInUp">
                   <a target="_blank" href="mailto:lijenny1999@gmail.com"><i class="hvr-bob fas fa-lg fa-fw fa-envelope"></i></a>
                   <a target="_blank" href="http://dribbble.com/jnnyli"><i class="hvr-bob fab fa-lg fa-fw fa-dribbble"></i></a>
                   <a target="_blank" href="http://linkedin.com/in/lijennifer2"><i class="hvr-bob fab fa-lg fa-fw fa-linkedin-in"></i></a>
@@ -99,7 +102,9 @@ $(document).ready(function(){
             </div>
           </div>
           <div class="col-lg-4 d-none d-lg-block">
-              <img class="me" alt="" src="me.png"/>
+            <div class="hvr-shrink">
+              <img class="me animated pulse" alt="" src="me.png"/>
+            </div>
             </div>
       </div>
     </div>
@@ -111,64 +116,80 @@ $(document).ready(function(){
           </div>
           <div class="col">
             <div class="projects-text">
-              <h2>Some stuff I've worked on 🙌</h2>
+              <h4>Some stuff I've worked on 🙌</h4>
             </div>
         <div class="row">
           <div class="col-md">
-            <div class="card">
-              <img class="card-img" src="old-img/thumbnail-founders-new.png" alt="Card image">
-              <div class="card-img-overlay">
-                <div class="card-paragraph">
-                <h3 class="card-title text-white text-center">Founders Network</h3>
-                <p class="card-text text-white text-center">
-                  Responsible for club's brand image, creative assets, and cultivating
-                  a design community.
-                </p>
-              </div>
-              </div>
-            </div>
+            <div data-aos="fade-right" data-aos-duration="1000">
+              <a href="old-projects/founders.html">
+                <div class="card mt-3 mt-md-0">
+                  <img class="card-img" src="old-img/thumbnail-founders-new.png" alt="Card image">
+                  <div class="card-img-overlay">
+                    <div class="card-paragraph">
+                    <h3 class="card-title text-white text-center">Founders Network</h3>
+                    <p class="card-text text-white text-center">
+                      Responsible for club's brand image, creative assets, and cultivating
+                      a design community.
+                    </p>
+                  </div>
+                  </div>
+                </div>
+              </a>
+          </div>
           </div>
           <div class="col-md">
-            <div class="card displaced">
-              <img class="card-img" src="old-img/thumbnail-p5k.png" alt="Card image">
-              <div class="card-img-overlay">
-              <div class="card-paragraph">
-                <h3 class="card-title text-white text-center">Project 5K</h3>
-                <p class="card-text text-white text-center">
-                  Connecting volunteer events
-                  with high school students.
-                  </p>
+            <div data-aos="fade-left" data-aos-duration="1000">
+              <a href="old-projects/founders.html">
+                <div class="card mt-3 mt-md-5">
+                  <img class="card-img" src="old-img/thumbnail-p5k.png" alt="Card image">
+                  <div class="card-img-overlay">
+                  <div class="card-paragraph">
+                    <h3 class="card-title text-white text-center">Project 5K</h3>
+                    <p class="card-text text-white text-center">
+                      Connecting volunteer events
+                      with high school students.
+                      </p>
+                  </div>
+                </div>
               </div>
-            </div>
+            </a>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md">
-            <div class="card">
-              <img class="card-img" src="old-img/thumbnail-tps-new.png" alt="Card image">
-              <div class="card-img-overlay">
-                <div class="card-paragraph">
-                <h3 class="card-title text-white text-center">BlueHat</h3>
-                <p class="card-text text-white text-center">
-                  Mobile messaging platform designed to limit unnecessary
-                  911 calls.
-                </p>
+          <div data-aos="fade-right" data-aos-duration="1000">
+            <a href="old-projects/founders.html">
+                <div class="card mt-3 mt-md-0">
+                  <img class="card-img" src="old-img/thumbnail-tps-new.png" alt="Card image">
+                  <div class="card-img-overlay">
+                    <div class="card-paragraph">
+                    <h3 class="card-title text-white text-center">BlueHat</h3>
+                    <p class="card-text text-white text-center">
+                      Mobile messaging platform designed to limit unnecessary
+                      911 calls.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
+            </a>
             </div>
           </div>
           <div class="col-md">
-            <div class="card displaced">
-              <img class="card-img" src="old-img/thumbnail-htv.png" alt="Card image">
-              <div class="card-img-overlay">
-                <div class="card-paragraph">
-                <h3 class="card-title text-white text-center">learnwith.me</h3>
-                <p class="card-text text-white text-center">
-                A platform where learners and teachers can connect.
-                </p>
-              </div>
-            </div>
+            <div data-aos="fade-left" data-aos-duration="1000">
+              <a href="old-projects/founders.html">
+                <div class="card mt-3 mt-md-5">
+                  <img class="card-img" src="old-img/thumbnail-htv.png" alt="Card image">
+                  <div class="card-img-overlay">
+                    <div class="card-paragraph">
+                    <h3 class="card-title text-white text-center">learnwith.me</h3>
+                    <p class="card-text text-white text-center">
+                    A platform where learners and teachers can connect.
+                    </p>
+                  </div>
+                </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -180,10 +201,12 @@ $(document).ready(function(){
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+    <script>
+      AOS.init();
+    </script>
 
   </body>
 </html>
