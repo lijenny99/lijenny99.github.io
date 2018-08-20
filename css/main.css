@@ -65,6 +65,14 @@ p, ul, li, ol {
   .body {
     margin-left: 30px;
   }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
 }
 
 .nav-item {
