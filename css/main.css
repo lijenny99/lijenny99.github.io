@@ -4,6 +4,7 @@ body, html {
   margin: 0;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -120,23 +121,27 @@ p, ul, li, ol {
 a.club-links:link {
     color: #000000;
     font-weight: 400;
+    border-bottom: 1px dotted #313639;
 }
 
 /* visited link */
 a.club-links:visited {
   color: #000000;
   font-weight: 400;
+  border-bottom: 1px dotted #313639;
 }
 
 /* mouse over link */
 a.club-links:hover {
     color: #0d3aa6;
     text-decoration: none;
+    border-bottom: 1px dotted #313639;
 }
 
 /* selected link */
 a.club-links:active {
     color: #000000;
+    border-bottom: 1px dotted #313639;
 }
 
 .fab, .fas {
