@@ -1,35 +1,3 @@
-.jumbotron-wfn {
-  background: url(../img/thumbnails/thumbnail-founders.png);
-  background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 330px;
-}
-
-.jumbotron-htv {
-  background: url(../img/thumbnails/thumbnail-htv.png);
-  background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 330px;
-}
-
-.jumbotron-tps {
-  background: url(../img/thumbnails/thumbnail-tps.png);
-  background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 330px;
-}
-
-.jumbotron-p5k {
-  background: url(../img/thumbnails/thumbnail-p5k.png);
-  background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 330px;
-}
-
 .container {
   display: block;
     margin: 0 auto;
@@ -41,4 +9,22 @@ height: 330px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
+}
+
+.block{
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.img-parallax {
+  width: 100vmax;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  pointer-events: none
 }
