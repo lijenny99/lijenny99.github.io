@@ -41,21 +41,58 @@
       <p class="subtitle">
         Summary</p>
       <p>
-        HackTPS is was a three-day hackathon, hosted by <a class="club-links" href="http://www.torontopolice.on.ca/" target="_blank">Toronto Police Services (TPS)</a> , in collaboration with the City of Toronto, Equitech, and the <a class="club-links"
+        HackTPS was a three-day hackathon, hosted by <a class="club-links" href="http://www.torontopolice.on.ca/" target="_blank">Toronto Police Services (TPS)</a> , in collaboration with the City of Toronto, Equitech, and the <a class="club-links"
           href="https://dmz.ryerson.ca/" target="_blank">Ryerson DMZ.</a> We were challenged to use ground breaking technologies to enhance real-time data and information to empower the community and build solutions for persistent safety issues.
       </p>
       <p class="subtitle">
-        Project Scope</p>
+        Problem Definition</p>
       <p>
-        Our team began by analyzing the core problems that the TPS currently face. We came across one common theme: 911 receives a significant volume of requests each day. We identified the core problems as
+        Our team began by analyzing the core problems that the Toronto Police Services currently face.
+        After speaking with some police officers that were at the event, one clear issue stood out:
+        <b>the sheer amount of 911 requests they receive.</b> Specifically, the TPS receive 70 to 80 low
+        priority calls a day. Examples of such calls include those for loud house parties, or a stray animal
+        wandering in the neighbourhood. Police must still spend time dealing with these situations.
+        Due to a limited amount of human resources,  more and more people calling 911 get put on hold - 
+        even those in high priority life or death situations.
+      </p>
+
+      <p class="subtitle">
+        The Solution</p>
+      <p>
+        Our target user was defined as someone who was <b>scared or pissed,</b> and not in life threatening danger
+        (we made the assumption that if the problem was 911 worthy, the user's instant reaction would be
+        calling 911 anyway). We also concluded that in order to make our service as accessible as possible,
+        we would create a mobile app as users would more likely be on their phone than laptop. In the end,
+        we decided to create a <b>mobile application that reduces the number of 911 calls and direct lower
+        priority emergencies to community watchers.</b>
+      </p>
+
+      <p class="subtitle">
+        User Flow</p>
+
+      <p>
+        Since the purpose of our app is to reduce the amount of non-emergency 911 calls,
+        we thoroughly analyzed how a user would progress through the app.
+        <br>
+        The landing page lists categories of potential issues that the user could be encountering.
+        Once a category is selected, information will be provided and the user will be informed about
+        whether their issue needs to be escalated. For instance, loud noises/parties should only be
+        escalated if they are occurring after 11pm. At this stage, there is <b>no person needed.</b>
+        Call-to-action buttons were inserted at the end to check if the user's request has been satisfied.
+        If yes, the app would close. 
+        <br>
+        If not, <b style="font-weight: 700">an automated message gets sent.</b> It prompts the users to provide more details on their
+        situation. Simultaneously, a neighbourhood community watcher gets pinged that there is a
+        potential problem in their area. They hop onto the chat and skim over the details the user provided.
+        The user flow then splits into three possible scenarios:
         <br>
         <ol>
-          <li>The TPS experience a daily number of 70 to 80 calls a day, which are not high priority calls.</li>
-          <li>Police have to deal with situations they shouldn’t have to deal with or aren’t priorities.</li>
-          <li>Too many people calling 911 means emergencies get put on hold.</li>
+          <li><b class="highlight">A report is filed.</b> The community watcher asks the user for more information regarding
+            their situation. The data is compiled into a PDF report and sent to the police to further
+            investigate the issue; user also receives a copy of the report.</li>
+          <li><b>Community watcher goes on site.</b> The user will see the community watcher's exact location on their phone as they approach the scene.</li>
+          <li><b>911 is called.</b> A first responder will be in contact with the user as soon as possible.</li>
         </ol>
-        <p>From there, we began constructing user personas and considering the problem from a user perspective. We decided to build a mobile application that would reduce the number of 911 calls, and instead direct lower priority emergencies to community
-          watchers.</p>
       </p>
       <div class="row" style="margin-top: 40px">
         <div class="col-md" style="margin-bottom:20px">
@@ -67,11 +104,20 @@
           <img src="../img/tps/user2.jpg" style="width:100%">
         </div>
       </div>
+      <div class="row">
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/tps/user3.jpg" style="width:100%">
+        </div>
+      </div>
       <p class="subtitle">
-        From brainstorming to building
+        Development
       </p>
-      <p> Our team delegated tasks and continued iterating on the designs while beginning development. The design process started with pen and paper, progressed to wireframes, then concluded with high fidelity prototypes that were later translated into code.
-        The final prototype in Invision can be viewed <a class="club-links" href="https://projects.invisionapp.com/share/STKL1CP6UP8#/screens/302199277" target="_blank">here</a>.
+      <p>
+        Our team delegated tasks and continued iterating on the designs while beginning development.
+        The design process started with pen and paper, progressed to low fidelity wireframes, then
+        concluded with high fidelity prototypes that were later translated into code. The prototype for
+        the citizen's portal was built using React Native while the final mockups for the responder/community
+        watcher portal were made using Invision, which can be viewed <a class="club-links" href="https://projects.invisionapp.com/share/STKL1CP6UP8#/screens/302199277" target="_blank">here</a>.
       </p>
       <div class="row">
         <div class="col-md" style="margin-bottom:20px">
@@ -85,6 +131,18 @@
         </div>
       </div>
 
+
+      <p class="subtitle">
+        Conclusion
+      </p>
+      <p>
+        OOverall, this hackathon was an amazing learning experience for me as an aspiring product
+        manager with interests in product design and front end development. There was a large emphasis
+        on the "business case" for the police, and we were encouraged to think through our ideas and
+        iterate multiple times before settling on a final solution. I also got to experience working
+        with front/back end developers and a UI/UX designer in an agile environment, tinkering with the
+        low and high fidelity prototypes, and using React Native to write code for the first time!
+      </p>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>

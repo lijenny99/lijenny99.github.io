@@ -28,3 +28,8 @@
   left: 50%;
   pointer-events: none
 }
+
+.highlight {
+    color:#000;
+    background:#adc1f2;
+}
