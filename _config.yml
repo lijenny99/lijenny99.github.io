@@ -1,7 +1,6 @@
-title:            JL.
+title:            Jenny Li
 tagline:          work in progress
 description:      a personal reminder to cherish every moment
-canonical: http://jekyll.gtat.me
 
 # Owner/author information
 owner:
@@ -11,7 +10,6 @@ owner:
   email:          lijenny1999@gmail.com
   github:         lijenny99
   location:       "Toronto, ON"
-  # Plug in your disqus shortname!
 
 tools:
   standards:      "HTML, SCSS, Jekyll"
