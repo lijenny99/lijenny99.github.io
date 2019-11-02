@@ -1,6 +1,6 @@
 // Underline
 @mixin underline($width: 2px, $style: solid, $border-color: $link) {
-  border-bottom: 2px solid $border-color; 
+  border-bottom: 2px solid $border-color;
 }
 
 // Clearfix
@@ -18,7 +18,7 @@
     }
 }
 
-// BACKGROUND GRADIENT 
+// BACKGROUND GRADIENT
 @mixin background-gradient($startColor: #3C3C3C, $endColor: #999999) {
     background-color: $startColor;
     background-image: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
@@ -168,7 +168,7 @@
 }
 
 /* TRANSITION */
-@mixin transit($what: all, $length: 1s, $easing: ease-in-out) {
+@mixin transit($what: all, $length: 0s, $easing: ease-in-out) {
     -moz-transition:    $what $length $easing;
     -o-transition:      $what $length $easing;
     -webkit-transition: $what $length $easing;
