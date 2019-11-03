@@ -154,7 +154,7 @@ input {
 #bump {
     min-height: 100%;
     height: auto;
-    margin: 0 auto ($footerHeight * -1);
+    margin: 0 auto ($footerHeight/2 * -1);
 }
 
 .wrap {
@@ -549,7 +549,7 @@ header.site-header {
 
 // Page Navigation
 .PageNavigation {
-  font-size: $fs5;
+  font-size: $fs4;
   display: block;
   overflow: hidden;
   width: auto;
@@ -578,10 +578,11 @@ header.site-header {
 
 .PageNavigation2 {
   text-align: center;
+  font-size: $fs4;
 }
 
 .PageNavigation2 .home {
-  margin-left: 38px;
+  margin-left: 70px;
 }
 
 .PageNavigation2 .next {
@@ -660,6 +661,14 @@ footer {
         margin: 0 auto;
     }
 
+    .PageNavigation, .PageNavigation2 {
+      font-size: $fs5;
+    }
+
+    .PageNavigation2 .home {
+      margin-left: 38px;
+    }
+
     }
 }
 
@@ -697,6 +706,14 @@ footer {
         }
     }
 
+    .PageNavigation, .PageNavigation2 {
+      font-size: $fs5;
+    }
+
+    .PageNavigation2 .home {
+      margin-left: 38px;
+    }
+
 }
 
 
@@ -718,5 +735,27 @@ footer {
   small {
       font-size: $fs6;
   }
+
+  .archive-wrap .post-list li  a:before, a:hover:before {
+      content:'\201c';
+      color: $grey-light;
+      position: absolute;
+      margin-left: -40px;
+      font-size: 60px;
+      z-index: 10;
+      top: -6px;
+      left: 0;
+      text-align: center;
+      @include transit;
+
+    }
+
+    .PageNavigation, .PageNavigation2 {
+      font-size: $fs5;
+    }
+
+    .PageNavigation2 .home {
+      margin-left: 38px;
+    }
 
 }
