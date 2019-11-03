@@ -2,8 +2,7 @@
 layout: post
 title: thanks giving
 description: "The start of another school year was a little bit different this time around."
-category: articles
-tags: [intro, beginner, jekyll, tutorial]
+tags: [yr3, life]
 image:
   feature: "https://images.unsplash.com/photo-1509838174235-432f709c7bfd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
 ---
