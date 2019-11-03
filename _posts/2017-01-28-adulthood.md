@@ -2,7 +2,7 @@
 layout: post
 title: Adulthood
 description: "It’s still surreal that I’m actually 18 years old – legally an adult and finally allowed to sign my own permission forms. I can get a credit card, open a Tax Free Savings Account, and drink (in Quebec)."
-tags: [life]
+tags: [personal]
 image:
   feature: "https://images.unsplash.com/photo-1464349153735-7db50ed83c84?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1662&q=80"
 ---
@@ -17,6 +17,6 @@ I promised myself at the beginning of this year that I would try to blog, journa
 
 >“Turning 18 will transition you into a crazy world filled with many surprises and obstacles. Enjoy adulthood and remember your parents will always be there for you.” – Dad
 
-![Me, 8 years old]({{ site.url }}/images/kids.jpg)
+![Me, 8 years old]({{ site.url }}/images/01-28-17/kids.jpg)
 
-![Me, 18 years old]({{ site.url }}/images/18.jpg)
+![Me, 18 years old]({{ site.url }}/images/01-28-17/18.jpg)

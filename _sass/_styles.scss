@@ -225,11 +225,11 @@ header.site-header {
   margin-left: auto;
   margin-right: auto;
   -webkit-filter: grayscale(100%);
--webkit-transition: .5s ease-in-out;
--moz-filter: grayscale(100%);
--moz-transition: .5s ease-in-out;
--o-filter: grayscale(100%);
--o-transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(100%);
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(100%);
+  -o-transition: .5s ease-in-out;
 
 }
 
@@ -363,24 +363,11 @@ header.site-header {
                 }
             }
 
-            a:hover:before {
-                content:'...';
-                color: $grey-light;
-                font-family: $sans;
-                position: absolute;
-                margin-left: -70px;
-                font-size: 40px;
-                left: 0;
-                top: -20px;
-                text-align: center;
-                @include transit;
-            }
-
-            a:before {
+            a:before, a:hover:before {
                 content:'\201c';
                 color: $grey-light;
                 position: absolute;
-                margin-left: -70px;
+                margin-left: -60px;
                 font-size: 60px;
                 z-index: 10;
                 top: -6px;
@@ -560,6 +547,7 @@ header.site-header {
     }
 }
 
+// Page Navigation
 .PageNavigation {
   font-size: $fs5;
   display: block;
@@ -593,7 +581,7 @@ header.site-header {
 }
 
 .PageNavigation2 .home {
-  margin-left: 35px;
+  margin-left: 38px;
 }
 
 .PageNavigation2 .next {
@@ -636,45 +624,6 @@ footer {
             color: $grey-medium;
         }
     }
-
-    .list-title {
-        margin-bottom: $lh/2;
-        border-bottom: 2px solid $link;
-        font-style: italic;
-        font-size: $fs4;
-    }
-    .prev-posts {
-        @include column(6,10);
-        max-width: 600px;
-        min-height: 250px;
-        padding-left: 5vw;
-        p {
-            padding-top: $lh*2;
-        }
-        li {
-            @include row(12);
-            margin-top: $lh/2;
-            .recent-title {
-                @include column(8,12);
-                font-style: italic;
-                a {
-                    &:hover {
-                        color: $white;
-                    }
-                }
-            }
-            span.date {
-                float: none;
-                color: transparentize($grey-light, .4);
-                @include column(4,12);
-                position: relative;
-                font-size: $fs5;
-                font-family: $sans;
-                text-transform: uppercase;
-                text-align: right;
-            }
-        }
-    }
 }
 
 /* Tablet
@@ -694,6 +643,7 @@ blockquote, blockquote p {
 
 footer {
     font-size: $fs5;
+    height: $footerHeight/2;
 }
 
 }
@@ -703,7 +653,7 @@ footer {
 
 @media only screen and (max-width: 500px) {
     footer {
-
+      height: $footerHeight/2;
 
     aside {
         width: 90%;
@@ -729,79 +679,6 @@ footer {
     padding-top: 0;
   }
 
-  header.site-header hgroup h1 {
-    margin-bottom: 0;
-    font-size: $fsp;
-  }
-
-  header.site-header hgroup {
-    position: absolute;
-    left: 7%;
-    float: none;
-    padding-left: 0;
-  }
-
-  header.site-header a.menu {
-    position: absolute;
-    right: 7%;
-    display: block;
-    float: right;
-    width: 16px;
-    height: 16px;
-    color: white;
-    .icons {
-        font-size: 32px;
-    }
-  }
-
-  header.site-header a.menu img {
-    width: 24px;
-    height: auto;
-  }
-
-  header.site-header nav {
-    display: none;
-    float: none;
-    width: 100%;
-    padding-right: 0;
-  }
-
-  header.site-header nav:before {
-    display: table;
-    clear: both;
-    content: '';
-  }
-
-  header.site-header nav ul {
-    padding: 20px 0 10px 0;
-    margin-top: 15px;
-  }
-
-  header.site-header nav ul li {
-    display: block;
-    margin-left: 0;
-    top: 0px;
-    font-size: $fs5;
-  }
-
-  header.site-header nav ul li a {
-    display: block;
-    text-align: right;
-    font-weight: bold;
-    padding: 15px 0px;
-    padding-right: 7%;
-    position: relative;
-    width: 100%;
-    color: $white;
-    &:active {
-      background-color: $link;
-      color: white;
-    }
-    &:hover {
-        text-shadow: none;
-    }
-  }
-
   #bump .darken nav ul {
           padding: 0;
           margin-top: 40px;
@@ -825,20 +702,21 @@ footer {
 
 @media only screen and (max-width: $breakpoint-1-max-width) {
 
-.post {
-    @include column(9);
-    max-width: 420px;
-    display: block;
-    margin: 0 auto;
-    float: none;
-}
+  .post {
+      @include column(9);
+      max-width: 420px;
+      display: block;
+      margin: 0 auto;
+      float: none;
+  }
 
-footer {
-    font-size: $fs5;
-}
+  footer {
+      font-size: $fs5;
+      height: $footerHeight/2;
+  }
 
-small {
-    font-size: $fs6;
-}
+  small {
+      font-size: $fs6;
+  }
 
 }
