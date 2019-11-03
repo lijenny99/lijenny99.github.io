@@ -11,19 +11,51 @@
   {% endif %}
 {% endif %}
 
+{% capture count_words %}
+  	{{ page.content | number_of_words }}
+  {% endcapture %}
+
+  {% capture time_words %}
+  	{{count_words | divided_by: 5}}
+  {% endcapture %}
 
       <article class="wrap post">
         <header class="post-header">
           <hgroup>
             <h1>{{page.title}}</h1>
-            <p class="date">{{page.date | date: "%b %d, %Y" }}</p>
+            <p class="date">{{page.date | date: "%b %d, %Y" }}	• {{time_words | divided_by: 60}} min read</p>
             <p class="intro">{% if page.description %}{{ page.description }}{% else %}{{ page.tagline }}{% endif %}</p>
           </hgroup>
         </header>
 
         {{ content }}
+
+        <div class="PageNavigation">
+          {% if page.previous.url %}
+            <div class="column">
+              <a class="prev" href="{{page.previous.url}}">&laquo; Previous</a>
+            </div>
+            <div class="column">
+              <a class="home" href="/">Home</a>
+            </div>
+            <div class="column">
+              {% if page.next.url %}
+                <a class="next" href="{{page.next.url}}">Next &raquo;</a>
+              {% endif %}
+            </div>
+          </div>
+          {% else %}
+          <div class="PageNavigation2">
+            <a class="home" href="/">Home</a>
+            {% if page.next.url %}
+              <a class="next" href="{{page.next.url}}">Next &raquo;</a>
+            {% endif %}
+          </div>
+          {% endif %}
       </article>
+
     </section>
-</div>
+
+
 
 {% include footer.html %}

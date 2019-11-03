@@ -13,7 +13,7 @@ Business school is quite the contrary.
 
 25-35% of my grade in all my courses are based on contribution. I have to talk in class every day. On top of that, I found myself conversing during the 20-minute breaks too, whether it was with my section-mates or girls in the long washroom lines.
 
-Everyone in our year ends class around the same time. Everyone is in the same building. When the clock strikes 1:00, chaos erupts as people scramble to buy lunch, prep for an interview, or change for an info session. It’s almost impossible to find a spot to sit and eat, let alone a quiet one—somewhere I wouldn’t be interrupted by friends walking past every 2 minutes.
+Everyone in our year ends class around the same time. Everyone is in the same building. When the clock strikes 1:00, chaos erupts as people scramble to buy lunch, prep for an interview, or change for an info session. It’s almost impossible to find a spot to sit and eat, let alone a *quiet* one—somewhere I wouldn’t be interrupted by friends walking past every 2 minutes.
 
 It was a hard adjustment. While I loved the case-based style of learning, it was tiring to be constantly “prepared” for class the next day. I also wasn’t used to the social environment that was vastly different from my old engineering classes. On the second day of school, I remember feeling extremely drained. I yearned alone time away from the “hustle” mentality the building radiated.
 
@@ -21,7 +21,7 @@ With my roommates being in different sections, they became the people I talked t
 
 I got so caught up in the change. The weeks always felt too long while the days felt too short. I could never tackle every item on my to-do list. At the same time, I constantly found myself thinking back to a previous case or assignment or exam and realizing it had only been seven days since I touched it.
 
-“That felt like a century ago,” I would often say.
+*“That felt like a century ago,”* I would often say.
 
 Because of that, I barely realized it was already fall. Thanksgiving was right around the corner. Soon enough, I was on my way home for the long weekend.
 

@@ -8,8 +8,8 @@
 $black:  #3b3b3b;
 $white: #f9f9f9;
 
-$grey-dark:   #222;
-$grey-medium: #999;
+$grey-dark:   #222222;
+$grey-medium: #999999;
 $grey-light:  #d9d9d9;
 
 $hilite: #fffbd7;
@@ -20,8 +20,9 @@ $accent: #24536B;
 
 /* Typography
    ========================================================================== */
-$sans: "Source Sans Pro", "Open Sans", "Helvetica Neue", "Arial", sans-serif;
-$serif: "Calendas Plus","Crimson Text", "Hoefler Text", "Georgia", serif;
+$sans: "Miriam Libre", "Helvetica Neue", "Arial", sans-serif;
+$serif: "Crimson Text", "Hoefler Text", "Georgia", serif;
+$alt-sans: "Heebo", "Helvetica Neue", "Arial", sans-serif;
 
 
 
@@ -30,7 +31,7 @@ $serif: "Calendas Plus","Crimson Text", "Hoefler Text", "Georgia", serif;
 /** * 12 & 16 as roots then powers of two. */
 $fs1:64px;
 $fs2:48px;
-$fs3:32px;
+$fs3:28px;
 $fs4:24px;
 $fsp:22px;
 $fs5:16px;

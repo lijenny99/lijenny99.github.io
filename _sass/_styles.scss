@@ -12,8 +12,13 @@ body {
   overflow-x: hidden;
 }
 
-h1,h2,h3,h4,h5 {
+h1,h2,h4,h5 {
     font-family: $serif;
+}
+
+h3 {
+  font-family: $alt-sans;
+  font-weight: 700;
 }
 
 p {
@@ -31,9 +36,7 @@ a:hover {
 }
 
 em {
-    padding: 1px 2px;
-    border-radius: 2px;
-    background: #ffe8c0;
+    font-style: italic;
 }
 
 strong {
@@ -60,7 +63,7 @@ blockquote, blockquote p {
     font-style: italic;
     line-height: 1.3em;
     text-align: center;
-    color: lighten($black, .2);
+    color: $grey-medium;
     margin-bottom: $lh;
 }
 
@@ -101,8 +104,6 @@ code {
         }
     }
 }
-
-
 
 hr {
     display: block;
@@ -177,7 +178,7 @@ input {
 /* Header */
 
 header.site-header {
-  padding: 40px 0;
+  padding: 50px 0 0 0;
   position: absolute;
   width: 100%;
   z-index: 5000;
@@ -217,68 +218,46 @@ header.site-header {
 
 }
 
-
-header.site-header a.menu {
-  display: none;
-}
-
-header.site-header hgroup h1, header.site-header nav ul {
-  font-family: $sans;
-}
-header.site-header hgroup {
-  float: left;
-  padding-left: 5vw;
-  h1 {
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 100%;
-      color: $accent;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-  }
-  a {
-      color: #fff;
-      @include transit(all, .2s, ease);
-
-      &:hover {
-        @include tshd(0, 0, 3px, rgba(255,255,255,.6));
-        @include transit(all, .2s, ease);
-      }
-  }
-}
-
-header.site-header nav {
-  float: right;
+.img-circle {
+  border-radius: 50%;
+  height: 150px;
   display: block;
-  padding-right: 5vw;
-  @include clearfix;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-filter: grayscale(100%);
+-webkit-transition: .5s ease-in-out;
+-moz-filter: grayscale(100%);
+-moz-transition: .5s ease-in-out;
+-o-filter: grayscale(100%);
+-o-transition: .5s ease-in-out;
 
-  ul li {
-    font-size: 16px;
-    text-transform: uppercase;
-    display: inline;
-    font-weight: bold;
-    top: 2px;
-    position: relative;
-    margin-left: 20px;
-    a {
-        color: white;
-        @include transit(all, .2s, ease);
-        &:hover {
-            @include tshd(0, 0, 3px, rgba(255,255,255,.6));
-            @include transit(all, .2s, ease);
-        }
-    }
-  }
 }
 
+.img-circle:hover {
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .5s ease-in-out;
+}
+
+.header-title {
+  color: $grey-dark;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.header-subtitle {
+  color: $grey-medium;
+  font-style: italic;
+  padding-top: 10px;
+}
 
 /* Article Stuff */
 
-
 .article {
     position: relative;
-    margin-bottom: $lh;
 
     .overlay {
         vertical-align: middle;
@@ -327,7 +306,7 @@ header.site-header nav {
                 font-family: $sans;
                 font-size: $fs5;
                 font-weight: bold;
-                color: $grey-light;
+                color: $grey-medium;
                 text-transform: uppercase;
                 margin-top: $lh * 2/3;
             }
@@ -355,7 +334,7 @@ header.site-header nav {
     display: block;
     margin: 0 auto;
     float: none;
-    padding-top: 100px;
+    padding-top: 75px;
 
     // Post Listing
     .post-list {
@@ -451,11 +430,11 @@ header.site-header nav {
         top: 45px;
         z-index: 5;
         .date {
-            font-size: $fs5;
+            font-size: $fs4;
             position: relative;
             top: 10px;
             left: 6px;
-            color: $grey-medium;
+            color: $grey-dark;
             margin-bottom: $lh/2;
         }
     }
@@ -480,9 +459,7 @@ header.site-header nav {
 
         figcaption {
             font-size: $fs5;
-            font-family: $sans;
-            font-weight: bold;
-            text-transform: uppercase;
+            font-family: $alt-sans;
             color: lighten($black, 50%);
             text-align: center;
         }
@@ -504,8 +481,6 @@ header.site-header nav {
         caption {
             font-size: $fs5;
             font-family: $sans;
-            font-weight: bold;
-            text-transform: uppercase;
             color: lighten($black, 50%);
             text-align: center;
             margin-bottom: $lh/2;
@@ -585,6 +560,47 @@ header.site-header nav {
     }
 }
 
+.PageNavigation {
+  font-size: $fs5;
+  display: block;
+  overflow: hidden;
+  width: auto;
+}
+
+.PageNavigation a {
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+.PageNavigation .column {
+  float: left;
+  width: 33.33%;
+}
+
+
+.PageNavigation .home {
+  text-align: center;
+}
+
+.PageNavigation .next {
+  float: right;
+  text-align: right;
+}
+
+.PageNavigation2 {
+  text-align: center;
+}
+
+.PageNavigation2 .home {
+  margin-left: 35px;
+}
+
+.PageNavigation2 .next {
+  float: right;
+  text-align: right;
+}
+
 /* Footer Stuff */
 .push {
     height: $footerHeight/4 !important;
@@ -592,6 +608,7 @@ header.site-header nav {
 
 footer {
     width: 100%;
+    margin-bottom: 30px;
     background: $white;
     height: $footerHeight;
     font-size: $fsp;
@@ -614,7 +631,6 @@ footer {
         position: absolute;
         bottom: 8px;
         font-family: $sans;
-        text-transform: uppercase;
         color: $grey-medium;
         a {
             color: $grey-medium;
@@ -659,33 +675,7 @@ footer {
             }
         }
     }
-
-    .social {
-        position: absolute;
-        top: 109px;
-        @include column(2,12);
-        right: 5vw;
-        font-style: italic;
-        a {
-            &:hover {
-                color: $white;
-            }
-        }
-        ul {
-            li {
-                margin-bottom: $lh/2;
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-        }
-    }
 }
-
-.disqus {
-    margin-top: $lh*3;
-}
-
 
 /* Tablet
    ========================================================================== */
@@ -704,25 +694,7 @@ blockquote, blockquote p {
 
 footer {
     font-size: $fs5;
-
-    .prev-posts {
-        li  {
-
-          .recent-title {
-
-          }
-
-          span.date {
-              font-size: $fs6;
-          }
-        }
-    }
-
-    .social {
-        right: 10vw;
-    }
 }
-
 
 }
 
@@ -732,24 +704,10 @@ footer {
 @media only screen and (max-width: 500px) {
     footer {
 
-    .social {
-        display: none;
-    }
 
     aside {
         width: 90%;
         margin: 0 auto;
-    }
-
-    .prev-posts {
-        @include column(9);
-        padding-left: 0;
-        float: none;
-        margin: 0 auto;
-        display: block;
-        li {
-            margin-top: $lh/2;
-        }
     }
 
     }
@@ -767,8 +725,7 @@ footer {
 
 
   header.site-header {
-    min-height: 40px;
-    margin-top: 10px;
+    margin-top: 20px;
     padding-top: 0;
   }
 

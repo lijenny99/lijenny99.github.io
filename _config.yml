@@ -1,4 +1,4 @@
-title:            Jenny Li
+title:            j.
 tagline:          work in progress
 description:      a personal reminder to cherish every moment
 
@@ -18,15 +18,6 @@ tools:
 opengraph:
   locale:           en_US
 
-# Links to include in top navigation
-# For external links add external: true
-
-#links:
-#  - title: About
-#    url: /about
-#  - title: Portfolio
-#    url: https://lijennifer.me
-#    external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
