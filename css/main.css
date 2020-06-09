@@ -41,6 +41,11 @@ p, ul, li, ol {
   position: relative;
 }
 
+.container-small {
+  margin: 120px auto;
+  width: 50%;
+}
+
 .navbar {
   margin-top: 30px;
   margin-right: 120px;
@@ -49,6 +54,10 @@ p, ul, li, ol {
 @media screen and (max-width:860px) {
   .navbar {
     margin-right: 50px;
+  }
+  .container-small {
+    margin: 100px auto;
+    width: 60%;
   }
 }
 
@@ -73,6 +82,10 @@ p, ul, li, ol {
 
   h2 {
     font-size: 16px;
+  }
+  .container-small {
+    margin: 80px auto;
+    width: 75%;
   }
 }
 
