@@ -65,6 +65,9 @@ p, ul, li, ol {
   .navbar {
     margin-right: auto;
   }
+  .btn {
+    display: none;
+  }
 }
 
 .body {
