@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113649003-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-113649003-1');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/projects.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="shortcut icon" type="image/png" href="../favicon.png" />
+
+  <title>Goodreads UX Analysis and Redesign | Jennifer Li</title>
+</head>
+
+<body>
+  <div class="block jumbotron-fluid">
+    <img src="../img/thumbnails/thumbnail-goodreads.png" data-speed="-0.75" class="img-parallax">
+  </div>
+  <div class="container">
+    <div>
+      <h5 class="animated fadeInDown" style="text-align: center; margin-top: 3rem; color: #0d3aa6">Goodreads UX Analysis and Redesign</h5>
+      <h2 class="animated fadeInDown" style="text-align: center; margin-bottom: 40px">Passion Project</h2>
+      <p class="subtitle">
+        The Challenge</p>
+      <p>
+        Since summer 2018 when I began reading for pleasure again, I have been an avid Goodreads user. When my country went under lockdown during the COVID-19 pandemic, I, like many others, found myself with a disproportionate amount of free time. I spent many
+        of these excess hours reading and subsequently logging my activity on Goodreads. While doing so, I uncovered some pain points in the current UX that I believe can be alleviated. Seeking ways to occupy myself in quarantine, I challenged myself
+        to redesign the user experience of the Goodreads mobile app.
+      </p>
+      <p class="subtitle">
+        My Approach</p>
+      <p>
+        <ol>
+          <li>Gain a better understanding of the platform</li>
+          <li>Analyze the current information architecture</li>
+          <li>Map out the current user journey and identify pain points</li>
+          <li>Redesign information architecture and articulate ideal user flow</li>
+          <li>Create responsive wireframes and UI prototypes</li>
+        </ol>
+      </p>
+
+      <p class="subtitle">
+        About the Platform</p>
+      <p>
+        <a class="club-links" href="https://www.goodreads.com" target="_blank">Goodreads</a> is a social categorizing database of books, annotations, and reviews. Users sign up to generate library catalogs and reading lists. Additional features include
+        the ability to create groups, polls, and discussion forums. Launched in January 2007 and acquired by Amazon in March 2013, the platform has since accumulated upwards of 90 million members and 2.6 billion books in its catalog.
+        <br>
+        <br>
+
+        <a class="club-links" href="https://www.theatlantic.com/business/archive/2013/04/the-simple-reason-why-goodreads-is-so-valuable-to-amazon/274548/" target="_blank">This</a> article does a pretty good job summarizing what made Goodreads such an
+        attractive acquisition target for e-commerce giant Amazon. For one, Amazon's business began as an online bookstore. While Amazon initially expanded through increasing its share of the print book market and its dominance of online book sales, it
+        was its early investments in ebooks and e-readers that turned the company into a digital publishing and book-selling powerhouse. Naturally, countless synergies between Kindle devices and Goodreads' social sharing platform could be realized, providing
+        significant value add for Amazon. However, perhaps the most significant benefit comes from the platform's active users. Today's publishing industry seemingly survives on these super fans - bookworms who read a lot and tell their friends what to
+        read too. Goodreads is the convention of this user group, the ecosystem where many influential readers choose their books. As David Vinjamuri from
+        <a class="club-links" href="https://www.forbes.com/sites/davidvinjamuri/2013/03/29/three-hidden-benefits-of-the-amazon-acquisition-of-goodreads/?__hstc=215845384.6335aae574b0cbaf5ba4692344eb513a.1363381836591.1364311418446.1364841555630.3&__hssc=215845384.1.1364841555630#53da8f2a731f"
+          target="_blank">Forbes</a> put it, <em>"Goodreads offers Amazon the ability to transmit the recommendations of prolific readers to the average reader."</em>
+        <br>
+        <br> Like most online platforms these days, Goodreads makes money through advertising. Goodreads works with the "Big Six" - Random House, HarperCollins, Penguin, Simon & Schuster, Macmillan and Hachette Book Group - as well as other smaller publishers
+        and individual authors and offers uniquely targeted advertising. However, considering the sheer size of Amazon's business, this revenue figure is relatively insignificant. Goodreads' value ultimately comes from its users and the data they provide.
+        The platform's <b>business goals</b> can be summarized as follows:
+        <ul>
+          <li>Retain existing users and inspire frequent usage</li>
+          <li>Expand membership</li>
+          <li>Build a social community within the app</li>
+          <li>Encourage word-of-mouth book recommendations</li>
+        </ul>
+      </p>
+      <p>
+        <br> At the same time, it is also important to consider the <b>user's goals</b> since user experience and business goals go hand in hand. As a good representative of the average Goodreads user, my primary needs are as follows:
+        <ul>
+          <li>See what books my friends and other influential figures are reading</li>
+          <li>Track the books I'm reading, have read, and want to read</li>
+          <li>View my reading progress throughout the year</li>
+          <li>Find out if a book is a good fit for me from community reviews</li>
+        </ul>
+      </p>
+
+      <p class="subtitle">
+        Current Information Architecture</p>
+
+      <p>
+        Information architecture (IA) focuses on organizing, structuring, and labeling content in an effective and sustainable way. The goal is to help users navigate complex sets of information and complete tasks. To do so, it is important to understand how
+        individual pieces relate to each other within the system.
+
+        <div class="row" style="margin-top: 20px">
+          <div class="col-md" style="margin-bottom:20px">
+            <img src="../img/goodreads/IA.png" style="width:100%">
+          </div>
+        </div>
+      </p>
+      <p>
+        Deconstructing the IA helped me gain a better understanding of how the app's features are organized. Immediately, I noticed several issues with the current structure:
+
+        <ol>
+          <li><b>Duplicated sections:</b> From the "My Books" tab, clicking on the "+" button opens another menu of options for users. Most of these choices, however, simply redirects them to another tab in the app (ie. Search for books → Search, Scan book
+            covers → Scan).</li>
+          <li><b>Buried features:</b> One of the platform's main goals is to build a social community within the app. Ironically, aside from "Friend Activity," the features that encourage this behaviour are difficult to find and can only be accessed through
+            the "More" tab.</li>
+          <li><b>Poorly prioritized information:</b> There is a lot of information being displayed to the user and a lack of priority within each tab. For instance, it is almost halfway through 2020 and my <em>2019 Year In Books</em> is still being shown.
+            Furthermore, I do not have a Kindle connected to my account, so the <em>Kindle Notes & Highlights</em> section is simply wasted space. For a better user experience, top user flows must be prioritized and a stronger visual hierarchy needs to
+            be in place.</li>
+        </ol>
+      </p>
+
+      <p class="subtitle">
+        User Journey Map
+      </p>
+      <p>
+        User journeys deal with the emotions, pain points, and motivations of the customer. It is a visualization of the step by step experience the user goes through and shows the entirety of a customer's relationship with a brand.
+      </p>
+      <div class="row" style="margin-top: 20px">
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/goodreads/UserJourneyMap.png" style="width:100%">
+        </div>
+      </div>
+      <p>
+        Focusing on the user's emotions and motivations encouraged me to approach the design problem with a user-centric mindset. Furthermore, by thinking through each stage of the user journey, I was able to more clearly understand potential pain points in the
+        process and discover ways to fix them.
+        <br>
+        <br> I believe there are three key pain points which should be pursued further:
+        <ol>
+          <li><b>Unconsolidated information</b> overload between the new releases, bestsellers list, and suggestions from friends.</li>
+          <li><b>Lack of a private thought space</b> as all reviews are publicly listed under each book's page.</li>
+          <li><b>Poor recommendation engine</b> as currently, Goodreads makes suggestions through collecting data on previous reads and ratings; however, other information sources and community reviews are rarely taken into account.</li>
+        </ol>
+      </p>
+
+      <p class="subtitle">
+        Revised Information Architecture
+      </p>
+      <p>
+        In order to tackle the issues identified in the current IA and the pain points uncovered by the user journey map, I went back to the IA and looked for ways it could be improved. I envisioned a more minimal UI, which would require reorganizing the information
+        and combining duplicate content.
+      </p>
+
+      <div class="row" style="margin-top: 20px">
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/goodreads/Revised-IA-1.png" style="width:100%">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/goodreads/Revised-IA-2.png" style="width:100%">
+        </div>
+      </div>
+
+      <p class="subtitle">
+        User Flows
+      </p>
+      <p>
+        User flows depict the set of steps taken by a user to achieve a goal within a digital product. Taking into consideration the revised IA, I mapped out two scenarios that Goodreads users typically face and the ideal user flows.
+        <br>
+        <br>
+        <b>Finished reading:</b>
+      </p>
+
+      <div class="row" style="margin-top: 20px">
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/goodreads/User Flow 1.png" style="width:100%">
+        </div>
+      </div>
+      <p><b>Looking for a new book:</b></p>
+      <div class="row" style="margin-top: 20px">
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/goodreads/User Flow 2.png" style="width:100%">
+        </div>
+      </div>
+
+      <p class="subtitle">
+        Sketches
+      </p>
+
+      <div class="row" style="margin-top: 20px">
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/goodreads/Sketch1.png" style="width:100%">
+        </div>
+      </div>
+      <div class="row" style="margin-top: 20px">
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/goodreads/Sketch2.png" style="width:100%">
+        </div>
+      </div>
+      <div class="row" style="margin-top: 20px">
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/goodreads/Sketch3.png" style="width:100%">
+        </div>
+      </div>
+
+      <p class="subtitle">
+        Wireframes
+      </p>
+
+      <div class="row" style="margin-top: 20px">
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/goodreads/w0.png" style="width:100%">
+        </div>
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/goodreads/w1.png" style="width:100%">
+        </div>
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/goodreads/w2.png" style="width:100%">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/goodreads/w3.png" style="width:100%">
+        </div>
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/goodreads/w4.png" style="width:100%">
+        </div>
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/goodreads/w5.png" style="width:100%">
+        </div>
+      </div>
+
+      <p class="subtitle">
+        High Fidelity Prototypes
+      </p>
+
+      <div class="row" style="margin-top: 20px">
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/goodreads/h0.png" style="width:100%">
+        </div>
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/goodreads/h1.png" style="width:100%">
+        </div>
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/goodreads/h2.png" style="width:100%">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/goodreads/h3.png" style="width:100%">
+        </div>
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/goodreads/h4.png" style="width:100%">
+        </div>
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/goodreads/h5.png" style="width:100%">
+        </div>
+      </div>
+      <p class="subtitle">
+        Reflection
+      </p>
+      <p>
+        This was my first time designing in dark mode - very exciting! Overall, working on this side project over the last few weeks was a fun and rewarding experience. I was super interested in UI/UX and product design during my first two years of university
+        (I even considering pursuing a career in the field), but as I started business school, that passion dwindled. I'm glad I got to fall in love with design all over again when I was working on this!
+      </p>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="../js/parallax.js"></script>
+</body>
+
+</html>
