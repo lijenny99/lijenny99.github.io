@@ -18,12 +18,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/projects.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="shortcut icon" type="image/png" href="../favicon.png" />
 
@@ -37,12 +39,230 @@
   <div class="container">
     <div>
       <h5 class="animated fadeInDown" style="text-align: center; margin-top: 3rem; color: #0d3aa6">Mentum</h5>
-      <h2 class="animated fadeInDown" style="text-align: center; margin-bottom: 40px">Freelance UI/UX and Product Designer</h2>
-      <p class="subtitle">
-        Coming Soon!</p>
+      <h2 class="animated fadeInDown" style="text-align: center; margin-bottom: 40px">Freelance UI/UX and Product
+        Designer</h2>
+      <p class="subtitle">Overview</p>
       <p>
-        Stay tuned for more info.
+        <a class="club-links" target="_blank" href="http://mentumqr.com">Mentum</a> is an all-in-one restaurant
+        point-of-sale ecosystem that enables businesses to achieve greater restaurant efficiency, customer satisfaction,
+        and user growth. From September 2020 until December 2021, I served as the first and lead product designer for
+        the startup. I worked closely with two of the founding engineers to redesign the order management system, stock
+        editor, and customer-facing kiosk; my work served 50K+ MAUs across all platforms and was featured in 500
+        Walmarts across North America.
       </p>
+
+      <p class="subtitle">Order Management System</p>
+
+      <p class="subtitle-italic">Problem Definition</p>
+      <p>Mentum was founded in March 2020. They identified a gap in the market that resulted from the COVID-19 pandemic
+        – restaurants were not equipped to handle deliveries across multiple food ordering platforms. Furthermore, once
+        outdoor dining started to open up over the summer, restaurants had to manage both deliveries as well as dine-in
+        orders. They built out the MVP quickly, and as a result, the UI was cluttered and poorly designed. My job was to
+        reimagine what this platform could look like to better serve our primary user demographic: restaurant owners
+        whose first language is not English.</p>
+
+      <p class="subtitle-italic">Project Goals</p>
+      <ol>
+        <li>Remove redundant or confusing UI elements in existing app</li>
+        <li>Shorten the time it takes for new users to learn and understand how to use the app</li>
+        <li>Display information by importance so that at a glance, restaurant owners know which orders should be
+          prioritized and what aspects need special attention (eg. allergies)</li>
+      </ol>
+
+      <p class="subtitle-italic">Approach and Process</p>
+      <p>
+        I started by performing an audit on the existing design that was in production. I put myself in the shoes of a
+        restaurant owner and walked through the entire user flow of how I would go through each step of the order
+        management process: receiving, confirming, preparing, delivering, and processing the payment of the order.
+        <br>
+        <br>
+        In early iterations, I played around with the concept of having a “sticky” incoming orders section that
+        restaurant staff would see regardless of which order they have selected. This would allow them to see the most
+        urgent task at all times – confirming the order is correct, so that it can be sent to the kitchen to be
+        prepared. However, upon presenting this design to users, I was met with a lot of confusion due to the fact that
+        a table number was displayed on top of this section. This led them to believe that the incoming orders were tied
+        to a particular table, as opposed to the entire restaurant.
+        <br>
+        <br>
+        Moving away from wireframes into a high-fidelity prototype (in dark mode!), I realized the design was very
+        text-heavy. For non-English speakers, this presents a challenge and directly goes against goal #2 of reducing
+        confusion for new users onboarding onto the product. I chose to display some of the less important information
+        through icons and ensured all “action items” were clearly marked as buttons.
+        <br>
+        <br>
+        In the next version, I took the learnings from earlier iterations and removed the incoming orders section. Here,
+        I realized that there was an imbalance in the information hierarchy. Specifically, data like contact information
+        and the total value of the order is not as important as it may seem. To make it easier for staff to view
+        everything at a glance, I shrunk the text and tucked it away. I also decided to use color as a way to separate
+        items in different statuses (eg. confirmed, served, paid). This would make it easier for staff to understand
+        where each item is in the long flow of the order management process.
+        <br>
+        <br>
+        The final design saw a lot of changes and improvements:
+      <ol>
+        <li>Removed “confirming” step in the process to reduce friction; orders were now automatically sent to the
+          kitchen</li>
+        <li>Reduced the amount of color on the screen; orange was used to highlight special user notes, such as
+          allergies</li>
+        <li>Order’s total value breakdown presented in more detail</li>
+        <li>Customer info tab which included information such as name, address, phone number, number of orders, total
+          spent, and last order</li>
+        <li>Driver info tab which included information such as name and phone number</li>
+      </ol>
+      </p>
+
+      <p class="subtitle-italic">Designs</p>
+      <div class="row" style="margin-top: 20px">
+        <div class="col-md" style="margin-bottom:10px">
+          <img src="../img/mentum/o1.png" style="width:100%">
+        </div>
+      </div>
+      <div class="row" style="margin-top: 10px">
+        <div class="col-md" style="margin-bottom:10px">
+          <img src="../img/mentum/o2.png" style="width:100%">
+        </div>
+      </div>
+      <div class="row" style="margin-top: 10px">
+        <div class="col-md" style="margin-bottom:10px">
+          <img src="../img/mentum/o3.png" style="width:100%">
+        </div>
+      </div>
+      <div class="row" style="margin-top: 10px">
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/mentum/o4.png" style="width:100%">
+        </div>
+      </div>
+
+      <p class="subtitle">Stock Editor</p>
+      <p class="subtitle-italic">Problem Definition</p>
+      <p>During my time, Mentum signed a partnership with Ghost Kitchen Brands to power their restaurants. They needed a
+        product that would allow them to search for items and mark them as in / out of stock across all restaurants they
+        manage.</p>
+
+      <p class="subtitle-italic">Project Goals</p>
+      <ol>
+        <li>Toggle in and out of stock items easily</li>
+        <li>Display information in a hierarchical and logical way</li>
+      </ol>
+
+      <p class="subtitle-italic">Approach and Process</p>
+      <p>I began by understanding the functional requirements and nuances that needed to be displayed. The hierarchy of
+        information was to be presented as follows: menu > category > item > modifiers. <br><br>
+        Menu referred to the restaurant, category encompassed separation at the restaurant level (eg. for Cinnabon, a
+        category would be something like “Classics” or “Specials”). Then, there was the specific item within this menu.
+        Finally, modifiers referred to extra information the customer could input if they wanted modifications or
+        additions to their order.<br><br>
+        An example to illustrate this: Cinnabon (menu) > Classics (category) > Cinnamon Bun (item) > Extra cinnamon
+        (modifiers).<br><br>
+        From there, I played with the best way to nest this information. I settled on creating an arrow toggling
+        function due to the sheer amount of data that needed to be displayed across all restaurants under Ghost Kitchen
+        Brands. I also experimented with different color combinations, but settled on something simple and easy to
+        follow.
+      </p>
+
+      <p class="subtitle-italic">Designs</p>
+      <div class="row" style="margin-top: 20px">
+        <div class="col-md" style="margin-bottom:10px">
+          <img src="../img/mentum/s1.png" style="width:100%">
+        </div>
+      </div>
+      <div class="row" style="margin-top: 10px">
+        <div class="col-md" style="margin-bottom:10px">
+          <img src="../img/mentum/s2.png" style="width:100%">
+        </div>
+      </div>
+      <div class="row" style="margin-top: 10px">
+        <div class="col-md" style="margin-bottom:10px">
+          <img src="../img/mentum/s3.png" style="width:100%">
+        </div>
+      </div>
+      <div class="row" style="margin-top: 10px">
+        <div class="col-md" style="margin-bottom:10px">
+          <img src="../img/mentum/s4.png" style="width:100%">
+        </div>
+      </div>
+      <div class="row" style="margin-top: 10px">
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/mentum/s5.png" style="width:100%">
+        </div>
+      </div>
+
+      <p class="subtitle">Order Management System</p>
+      <p class="subtitle-italic">Problem Definition</p>
+      <p>The kiosk is where customers can place orders in store. At 7 feet tall, there was a portion of space
+        at the top and bottom of the hardware that was not touchable for the average person. I was tasked with designing
+        this product from scratch.</p>
+      <p class="subtitle-italic">Project Goals</p>
+      <ol>
+        <li>Design for accessibility, modularity, and ease of use </li>
+        <li>Enable customers to make one order across multiple restaurants</li>
+        <li>Find a creative way to use non-touchable and non-viewable space</li>
+      </ol>
+      <p class="subtitle-italic">Approach and Process</p>
+      <p>Early on, I explored some creative ways to display all the necessary information. Similar to the stock editor,
+        there were four layers of information that had to be presented: menu/restaurant, category, item, and modifiers.
+        I played around with having two carousels for both the restaurant as well as the category, whereas the item and
+        modifiers would be displayed in a pop-up on click. I also experimented with different visual styles of
+        displaying categories, such as stock photos and stock photo + colors. I wanted to persistently display the
+        customer’s order on one side of the screen, but found it difficult to imagine it scaling if there were countless
+        modifiers on one item. <br><br>
+        By the third and final iteration, I had settled on horizontally scrolling through menu/restaurants on the top
+        and vertically scrolling through categories on the left. Items and modifiers were still displayed in a pop-up,
+        but now, modifiers were collapsible to improve scalability.
+      </p>
+      <p class="subtitle-italic">Designs</p>
+      <p>Version 1:</p>
+      <div class="row" style="margin-top: 10px">
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/mentum/k1.png" style="width:100%">
+        </div>
+      </div>
+      <p>Version 2:</p>
+      <div class="row" style="margin-top: 10px">
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/mentum/k2.png" style="width:100%">
+        </div>
+      </div>
+      <p>Version 3:</p>
+      <div class="row" style="margin-top: 10px">
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/mentum/k3.png" style="width:100%">
+        </div>
+      </div>
+      <p>Version 4:</p>
+      <div class="row" style="margin-top: 10px">
+        <div class="col-md" style="margin-bottom:20px">
+          <img src="../img/mentum/k4.png" style="width:100%">
+        </div>
+      </div>
+
+      <p class="subtitle">Challenges</p>
+      <ol>
+        <li style="margin-bottom: 10px"><span style="font-weight: 400">Iterating on an existing design</span> – I was
+          working directly with the
+          engineers who had built out the first version of the app. Thus, whenever I proposed a change that involved
+          removing something they spent time making, I faced pushback. To overcome this challenge, I made an active
+          effort to perform usability testing and collect feedback on our old vs. new designs. By collecting data and
+          insights from the actual customers who would be using them, I was able to present this information to the
+          engineers to support my thesis for removing certain UI elements and features.</li>
+        <li style="margin-bottom: 10px"><span style="font-weight: 400">Physical constraints of the kiosk</span> –
+          designing for this device was hard. Notably,
+          there was a good chunk of
+          “wasted space” at the top and bottom of the kiosk where we could not put touch icons because the average
+          person would not be able to comfortably reach it. We had to come up with creative ways to use the space, which
+          included ads and miscellaneous information (eg. weather, time, etc.).</li>
+        <li><span style="font-weight: 400">Cohesion across various platforms</span> – as Mentum scaled, they begun to
+          brand themselves as an all-in-one
+          ecosystem. As I grew to manage the designs for multiple products, it became extremely important for my work to
+          be consistent – what are the font sizes for headers, subtext, text? What is the color hierarchy and scheme
+          we’re implementing? </li>
+      </ol>
+
+      <p class="subtitle">Takeaways and Next Steps</p>
+      <p>This was my first time doing freelance design. I learned so much about how to design and build products that
+        impacted actual users and businesses, the importance of doing usability testing to validate your hypotheses, and
+        how to work cross-functionally to achieve your goals. As for next steps, I would have liked to work on creating
+        a design system to develop best practices and coherent styles for the company as they continue to scale. </p>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
